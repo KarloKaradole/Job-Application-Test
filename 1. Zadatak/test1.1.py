@@ -5,8 +5,8 @@ def transform_date_format(dates):
     
     for date_str in dates:
         if "p" == date_str[5] and "p" == date_str[9]:
-            parts = date_str.split("p")
-            year = parts[0].strip().replace(" ", "")
+            parts = date_str.split("p") # parts je sada LISTA["2 016","19","12"]
+            year = parts[0].strip().replace(" ", "") # strip miče sve razmake s početka i kraja
             day = parts[1].strip()
             #month = parts[2].strip()
             transformed_date = f"{year}{day}{date_str[-2: :]}"

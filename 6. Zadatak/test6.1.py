@@ -11,7 +11,7 @@ Which steps will form part of the solution to create a partition suitable for th
 
 a) Mount all partitions before modifying them.
 b) Create a new partition table.
-c) Shrink tghe /dev/nvme0n1p5 partition.
+c) Shrink the /dev/nvme0n1p5 partition.
 d) Format the 20gb partition.
 e) Set the esp flag in the partition?
 ____________________________________________________________________________________________

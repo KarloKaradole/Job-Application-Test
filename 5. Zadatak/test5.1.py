@@ -24,3 +24,14 @@ d) CORRECT. The ~/.ssh/known_hosts file stores the public keys of servers that t
    When connecting to a server, the client uses this file to verify the server's identity, ensuring it is connecting to the correct and trusted server.
 
 """
+
+"""
+
+SSH key-based authentication is a secure method for logging into a server without needing a password.
+It uses a pair of cryptographic keys: a private key (kept secure on the client) and a public key (stored on the server).
+When the client initiates a connection, the server uses the public key to verify the client by requesting proof of the corresponding private key.
+
+Key-based authentication offers enhanced security, as the private key never leaves the client, and it can be further protected with a passphrase.
+Once set up, this method allows passwordless, secure access to remote systems.
+
+"""
