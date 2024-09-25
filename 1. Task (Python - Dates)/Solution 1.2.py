@@ -16,6 +16,7 @@ def transform_date_format(dates):
             # Try different formats for other cases
             for fmt in ["%Y/%m/%d", "%m-%d-%Y", #"%Y%m%d", #"%Y %m %d"
                         ]:
+                        # We can play with different kinds of formats
                 try:
                     # Parse the date
                     parsed_date = datetime.strptime(date_str, fmt)

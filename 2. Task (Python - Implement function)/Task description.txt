@@ -1,0 +1,4 @@
+A script you are writing uses logarithmic functions from the math module.
+Implement the add_patch function that should add a log100 function to the math module.
+The log100 function should wrap the existing math.log function so that it calculates a logatithm with a base of 100.
+For example, math.log100(10) is equivalent to math.log(10,100) and should return 0.5

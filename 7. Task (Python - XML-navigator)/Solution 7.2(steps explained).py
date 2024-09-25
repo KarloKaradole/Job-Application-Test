@@ -1,26 +1,3 @@
-"""
-A company that does a lot of XML processing needs a class for easier navigation of XML documents.
-The XML documents always have unique tag names at a particular nesting level and XML nodes don't have unnecessary whitespaces between them.
-Complete the XmlNavigator class so that passing an XML document as a string to the constructor converts XML document into a dynamic object,
-in which the nodes are accesssible as the object's properties and the inner XML is accessible by the text property.
-At the moment, the text property works for the root level of XMLs and the root tag is added as a property.
-Complete the class so that it works recursively for XMLs with any level.
-For example, the below code creates a dynamic object for the given XML:
-
-    xml = \"<?xml version =\"1.0\" encoding=\"UTF-8\"?> + \"<State>" + \ "<City>New York </City> + \"</State>";
-    xmlObj = XmlNavigator(xml);
-    print(xmlObj.text)
-    print(xmlObj.State.text if hasattr(xmlObj, "State")
-        eles None) 
-    print(xmlObj.State.City.text if hasattr(xmlObj, "State") \ and hasattr(xmlObj.State, "City") 
-        else None).
-    
-    And it should print:
-    
-    <State><City>New York </City></State>, <City> New York </City>, New York
-    
-"""
-
 import xml.etree.ElementTree as ET
 
 class XmlNavigator:

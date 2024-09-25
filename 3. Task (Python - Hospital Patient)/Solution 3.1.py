@@ -1,12 +1,3 @@
-"""A hospital patient tracking system is restructuring its patient records.
-The current format i fragmented, each patient is represented as a namedtuple.
-Each element contains a different piece of info about the patient.
-Your task is to write a functioin that merges all of the info into one namedtuple, named Patient, in the order that it's provided to the function.
-For example:
-    PersonalDetails=namedtuple("PersonalDetails", ["date_of_birth"]) personal details = PersonalDetails(date_of_birth ="06-04-1972")
-    Complexion = namedtuple("Complexion", ["eye_color","hair_color"]) complexion = Complexion(eye_color = "Blue", hair_color = "Black" print(merge(personal_details, complexion).
-Should desplay: Patient(date_of_birth = "06-04-1972", eye_color = "Blue", hair_color = "Black")"""
-
 from collections import namedtuple # function that returns a new tuple subclass with named fields. You can access its fields both by index and by name.
 
 def merge(*args):

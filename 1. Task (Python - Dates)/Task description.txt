@@ -1,0 +1,22 @@
+Task Description:
+You are provided with a list of date strings in various formats. Your task is to write a function that standardizes these dates into a specific format: YYYYDDMM (where YYYY is the year, DD is the day, and MM is the month).
+
+The input list may contain dates in different formats, including:
+
+Standard formats like YYYY/MM/DD or MM-DD-YYYY.
+Custom format: Some dates may be in the format YYYYp DDp MM, where 'p' is a literal character separating the year, day, and month, and there may be additional spaces.
+Other formats such as continuous strings without separators (e.g., YYYYMMDD).
+
+Your function should:
+
+Handle multiple date formats by trying to match them and convert them to the required YYYYDDMM format.
+Identify the custom format YYYYp DDp MM and handle it appropriately.
+If the format of a date string doesn't match any of the known patterns, skip or ignore that date without throwing an error.
+
+Example Input:
+
+dates = ["2010/02/20", "2 016p 19p 12", "11-18-2012", "2018 12 24", "20130720"]
+
+Example Output:
+
+["20102002", "20161912", "20121811", "20182412", "20132007"]

@@ -1,0 +1,27 @@
+A computer gaame allows players to perform special actions using the key combinations "QEE" or "ZCC".
+A player gets extra points if they use these combinations equally in a gaming session.
+Skilled players who don't use any of the special actions also get extra points.
+Complete the function match_key_combo, which returns True if the number of occurences of "QEE" matches the number of occurrences of "ZCC" in a sequence of keypresses recieved from player,
+or if both key combinations have an occurrence of 0. Otherwise it should return False.
+String comparison should be case insensitive. 
+
+Starting code looks like:
+
+def match_key_combo(sequence):
+
+    return None
+
+print(match_key_combo("QEEAZCC"))
+print(match_key_combo("QEEQEEZCCZCC"))
+print(match_key_combo("QEEZCCQEE"))
+print(match_key_combo("XYZ"))
+
+Example output: 
+
+    match_key_combo("QEEAZCC") → True (one "QEE" and one "ZCC")
+
+    match_key_combo("QEEQEEZCCZCC") → True (two "QEE" and two "ZCC")
+
+    match_key_combo("QEEZCCQEE") → False (two "QEE" but one "ZCC")
+
+    match_key_combo("XYZ") → True (no "QEE" or "ZCC")
